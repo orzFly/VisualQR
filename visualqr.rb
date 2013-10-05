@@ -151,10 +151,10 @@ TEXT
 		
 		opts.on("-s", "--size N", Integer, <<EXPLAIN) do |n|
 size of the qrcode, 1~4 (default 4)
-               1                        21 * 21,  72 code length
-               2                        25 * 25, 128 code length
-               3                        29 * 29, 208 code length
-               4                        33 * 33, 288 code length
+               1                       21 * 21,  72 code length
+               2                       25 * 25, 128 code length
+               3                       29 * 29, 208 code length
+               4                       33 * 33, 288 code length
 EXPLAIN
 			raise "size out of range 1..4" unless (1..4) === n
 			options[:size] = n
@@ -162,10 +162,10 @@ EXPLAIN
 		
 		opts.on("-l", "--level N", Integer, <<EXPLAIN) do |n|
 error correction level, 1~4 (default 4)
-                1 (:l in rqrcode)     7% of code can be restored
-                2 (:m in rqrcode)    15% of code can be restored
-                3 (:q in rqrcode)    25% of code can be restored
-                4 (:h in rqrcode)    30% of code can be restored
+                1 (:l in rqrcode)       7% of code can be restored
+                2 (:m in rqrcode)      15% of code can be restored
+                3 (:q in rqrcode)      25% of code can be restored
+                4 (:h in rqrcode)      30% of code can be restored
 EXPLAIN
 			raise "level out of range 1..4" unless (1..4) === n
 			options[:level] = [:l, :m, :q, :h][n - 1]
