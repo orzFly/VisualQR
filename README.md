@@ -5,7 +5,7 @@ a quick, dirty and simple clone of http://www.visualead.com/
 
 Examples
 --------
-![Examples](http://ww4.sinaimg.cn/large/4e945bf5tw1e9aii2c6czj20v80iugpi.jpg)
+![Examples](http://ww2.sinaimg.cn/large/4e945bf5tw1e9aii2c6czj20v80iugpi.jpg)
 
 Usage
 -----
